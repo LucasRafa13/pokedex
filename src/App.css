@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 2vmin);
+  color: white;
+}
+
+.Instructions {
+  margin-top: 20px;
+  font-size: calc(15px + 1vmin);
+}
+
+.Form {
+  margin-top: 40px;
+  display: flex;
+  height: 60px;
+}
+
+.Input {
+  height: calc(40px + 2vmin);
+  width: calc(200px + 10vmin);
+  font-size: 1.2em;
+  padding: 0 24px;
+  border-radius: 5px 0 0 5px;
+  color: #3a3a3a;
+  border: 2px solid #fff;
+  border-right: 0;
+}
+
+.SearchButton {
+  display: inline-block;
+  height: calc(40px + 2vmin);
+  width: calc(40px + 10vmin);
+  background: #e3350c;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ButtonIcon {
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+#spinning-pokeball {
+  animation: spin 0.5s linear infinite;
+}
